@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Amit Kumar Portfolio — Web Developer & Digital Marketer. Explore my projects, experience, and certifications.">
+  <title>Amit's Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="logo">AMIT'S PORTFOLIO</div>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-links desktop-nav">
+      <a href="#home">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="#certifications">Experience</a>
+      <a href="#contact">Contact</a>
+      <a href="amit8607223516.pdf" class="cv-btn" download>Download CV</a>
+    </nav>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@Amvlog-a11" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://wa.me/8607223516" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/in/amit-kumar-b4461127a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fa-solid fa-bars"></i>
+      <span>Menu</span>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="#certifications">Experience</a>
+    <a href="#contact">Contact</a>
+    <a href="Amit_Kumar_CV.pdf" download>Download CV</a>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm Amit Kumar</h1>
+      <p>A passionate <strong>Web Developer</strong> and <strong>Digital Marketer</strong> — crafting digital experiences and driving online growth.</p>
+      <a href="projects.html" class="btn">View My Work</a>
+    </div>
+
+    <div class="hero-slider">
+      <div class="slides">
+        <img src="amit1.jpg" alt="Amit Kumar" class="slide active">
+        <img src="csio.jpg" alt="Project Work" class="slide">
+        <img src="csio1.JPG" alt="Marketing" class="slide">
+      </div>
+
+      <div class="slider-controls">
+        <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+        <span class="next" onclick="changeSlide(1)">&#10095;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <div class="about-img">
+        <img src="csio.jpg" alt="About Amit Kumar">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I'm <strong>Amit Kumar</strong> — a curious mind and passionate <strong>Web Developer</strong> who also lives and breathes <strong>Digital Marketing</strong>.  
+          From crafting sleek, responsive websites to optimizing Meta Ads and SEO strategies, I love blending creativity with data to bring ideas to life.  
+          I’m constantly exploring new tools and trends to build a solid digital foundation and deliver results that truly matter.  
+          Whether it’s design, marketing, or growth strategy — I bring energy, versatility, and a “let’s make it happen” attitude to every project I take on.
+        </p>
+        <a href="#contact" class="btn">Let’s Connect</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE / CERTIFICATIONS ===== -->
+  <section id="certifications" class="certifications">
+    <h2>Experience & Certifications</h2>
+    <p>From creative design to digital growth — here’s what shapes my expertise.<br>Click on each card to see details.</p>
+
+    <div class="cert-card-container">
+      <div class="cert-card" onclick="toggleCert(this)">
+        <i class="fa-solid fa-globe"></i>
+        <h3>CRM - Full Stack</h3>
+        <p>Worked under World Space Council and CSIR-CSIO with certification.</p>
+        <div class="cert-content">
+          <img src="website1.jpg" alt="CRM Project">
+          <p>Some of my CRM web projects.</p>
+        </div>
+      </div>
+
+      <div class="cert-card" onclick="toggleCert(this)">
+        <i class="fa-brands fa-figma"></i>
+        <h3>Figma Mastery</h3>
+        <p>Designed professional prototypes for the World Space Council.</p>
+        <div class="cert-content">
+          <img src="figma1.png" alt="Figma Prototype">
+          <p>Professional-level Figma mockups and UX design concepts.</p>
+        </div>
+      </div>
+
+      <div class="cert-card" onclick="toggleCert(this)">
+        <i class="fa-solid fa-chart-line"></i>
+        <h3>Digital Marketing</h3>
+        <p>Certified by Jindal Stainless Steel in Digital Marketing & Meta Ads.</p>
+        <div class="cert-content">
+          <img src="digital1.png" alt="Marketing Certification">
+          <p>Hands-on experience with Meta Ads, SEO, and brand promotion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact">
+    <h2>Let’s Create Something Amazing</h2>
+    <p>Have a project in mind or want to collaborate? Reach out — I’d love to hear from you!</p>
+
+    <div class="contact-buttons">
+      <a href="mailto:amit8607223515@gmail.com" class="btn email-btn">
+        <i class="fa-solid fa-envelope"></i> Email Me
+      </a>
+      <a href="https://wa.me/918607223516" target="_blank" class="btn whatsapp-btn">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Me
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-social">
+      <a href="https://www.youtube.com/@Amvlog-a11" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://wa.me/8607223516" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/in/amit-kumar-b4461127a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <p>© 2025 Amit Kumar. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== SCRIPT ===== -->
+  <script>
+    // HERO SLIDER
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
+    function changeSlide(n) {
+      slides[currentSlide].classList.remove("active");
+      currentSlide = (currentSlide + n + slides.length) % slides.length;
+      slides[currentSlide].classList.add("active");
+    }
+    setInterval(() => changeSlide(1), 4000);
+
+    // CERTIFICATION TOGGLE
+    function toggleCert(card) {
+      const content = card.querySelector(".cert-content");
+      const isVisible = content.style.display === "block";
+      document.querySelectorAll(".cert-content").forEach(c => c.style.display = "none");
+      content.style.display = isVisible ? "none" : "block";
+    }
+
+    // MOBILE MENU
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('show');
+      menuToggle.querySelector('i').classList.toggle('fa-bars');
+      menuToggle.querySelector('i').classList.toggle('fa-xmark');
+    });
+  </script>
+
+</body>
+</html>
